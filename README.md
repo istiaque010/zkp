@@ -1,11 +1,11 @@
-#ZKP-Zero Knowledge Proof <br />
-#zkp3 is the right one and it is modified from the following link <br />
+# ZKP-Zero Knowledge Proof <br />
+# zkp3 is the right one and it is modified from the following link <br />
 https://codethechange.stanford.edu/guides/guide_zk.html<br />
-#For the installation of library look following<br />
+# For the installation of library look following<br />
 https://itslinuxfoss.com/module-not-found-error-no-module-named-crypto-python/<br />
 
 
-#Steps:
+# Steps:
 There are several reasons why the proof might not be verified:
 
 1.The values p, g, x, y, and z were not calculated correctly. It's important to ensure that these values are calculated using the same parameters and formulas as the verifier.
