@@ -39,6 +39,6 @@ Note that the ZKP protocol can be repeated multiple times to increase confidence
 
 5. If the proof is not verified, it's important to check each step of the protocol carefully and look for any errors or discrepancies. It may also be helpful to compare the implementation to a reference implementation or to consult with a cryptography expert.
 
-##More resource <br/>
+## More resource <br/>
 Implement ZKP with ZoKrates
 https://www.youtube.com/watch?v=_ZvGZxhCFfE
