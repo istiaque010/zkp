@@ -6,6 +6,20 @@ https://itslinuxfoss.com/module-not-found-error-no-module-named-crypto-python/<b
 
 
 ## Steps:
+## Look at these steps too from chatGPT
+Here is a step-by-step guide to implementing a simple ZKP protocol:<br/>
+
+1. Choose a problem to prove: In this example, we will use the Discrete Logarithm Problem (DLP). This is a mathematical problem that is difficult to solve, but easy to verify. Specifically, given a prime number p, a generator g of the group Zp* and an element y in Zp*, the goal is to find an integer x such that g^x mod p = y. This problem is believed to be hard to solve, but given x, it is easy to verify that g^x mod p = y.<br/>
+
+2. Set up the protocol: In this example, we will use the Schnorr protocol. This is a simple protocol that allows you to prove knowledge of a DLP solution. The protocol involves three steps: commitment, challenge, and response.
+
+3. Commitment: The prover chooses a random value r and computes c = g^r mod p. This value c is called the commitment and is sent to the verifier.<br/>
+
+4. Challenge: The verifier chooses a random value e and sends it to the prover.<br/>
+
+5. Response: The prover computes s = r + ex mod (p-1), where x is the solution to the DLP, and sends it to the verifier.<br/>
+
+6. Verification: The verifier checks that g^s mod p = y^c * c^e mod p. If this equation holds, then the prover has successfully proven knowledge of the DLP solution without revealing the value of x.
 ### Here are the steps for proving a ZKP using the Schnorr protocol:
 
 1. Choose a prime number p and a generator g of a cyclic group of order p. Choose a random value x as the secret you want to prove knowledge of.<br />
