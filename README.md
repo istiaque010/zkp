@@ -41,4 +41,5 @@ Note that the ZKP protocol can be repeated multiple times to increase confidence
 
 ## More resource <br/>
 Implement ZKP with ZoKrates <br/>
-https://www.youtube.com/watch?v=_ZvGZxhCFfE
+https://www.youtube.com/watch?v=_ZvGZxhCFfE <br/>
+https://medium.com/coinmonks/zokrates-zksnarks-on-ethereum-made-easy-8022300f8ba6 
