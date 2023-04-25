@@ -6,6 +6,25 @@ https://itslinuxfoss.com/module-not-found-error-no-module-named-crypto-python/<b
 
 
 ## Steps:
+here are the steps for proving a ZKP using the Schnorr protocol:
+
+Choose a prime number p and a generator g of a cyclic group of order p. Choose a random value x as the secret you want to prove knowledge of.
+
+Generate a random value r and calculate y = g^r mod p.
+
+Receive a challenge value c from the verifier.
+
+Calculate z = (r + c*x) mod (p-1).
+
+Send y and z to the verifier.
+
+Wait for the verifier's response.
+
+If the verifier accepts the proof, the prover is considered to have successfully proved knowledge of the secret x without revealing it. If the verifier rejects the proof, the prover has failed to prove knowledge of x and must start over with a new r.
+
+The verifier's response involves checking that g^z * y^-c mod p = g. If this equation holds, the verifier accepts the proof as valid. If the equation does not hold, the verifier rejects the proof.
+
+Note that the ZKP protocol can be repeated multiple times to increase confidence in the validity of the proof. Additionally, the Schnorr protocol is just one example of a ZKP protocol, and there are many others with different security properties and computational requirements.
 There are several reasons why the proof might not be verified:
 
 1.The values p, g, x, y, and z were not calculated correctly. It's important to ensure that these values are calculated using the same parameters and formulas as the verifier.
