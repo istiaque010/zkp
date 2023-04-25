@@ -1,4 +1,5 @@
-# zkp3 is the right one and it is modified from the following link
+#ZKP-Zero Knowledge Proof
+#zkp3 is the right one and it is modified from the following link
 https://codethechange.stanford.edu/guides/guide_zk.html
 #For the installation of library look following
 https://itslinuxfoss.com/module-not-found-error-no-module-named-crypto-python/
